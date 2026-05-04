@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PomoPlan: Pomodoro, Tasks & Habit Tracker</title>
-    <meta name="description" content="Effective pomo plan with a pomodoro timer, task manager & habit tracker.">
+    <title>PomoPlan: Pomodoro Timer, Tasks & Habit Tracker</title>
+    <meta name="description" content="The ultimate productivity app combining a Pomodoro timer, Kanban & Waterfall task management, and habit tracking. Free on Google Play.">
     <link rel="icon" type="image/png" href="assets/favicon.png?v=4">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,109 +14,267 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="assets/logo.svg" alt="PomoPlan Logo" class="nav-logo">
                 PomoPlan
-            </div>
+            </a>
             <div class="nav-links">
                 <a href="#features">Features</a>
-                <a href="#comparison">Why Us?</a>
-                <a href="https://play.google.com/store/apps/details?id=com.pomoplan.pomoplan" class="btn-primary-small" target="_blank">Get the App</a>
+                <a href="#why-us">Why Us?</a>
+                <a href="https://play.google.com/store/apps/details?id=com.pomoplan.pomoplan" class="btn-nav" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.32.18.69.19 1.03.04l12.09-6.95-2.83-2.83-10.29 9.74zm-1.17-20.6C1.66 3.56 1.5 4 1.5 4.5v15c0 .5.16.94.51 1.34l.07.07 8.4-8.4v-.2L2.08 3.09l-.07.07zm17.4 9.14l-2.44-1.4-3.18 3.18 3.19 3.19 2.44-1.41c.7-.4.7-1.56-.01-1.96v-.6zM4.21.2C3.87.05 3.5.06 3.18.24L13.48 10.5l-2.83 2.83L2.01.9l.07-.07A1.5 1.5 0 014.21.2z"/></svg>
+                    Get Free
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
+        <div class="hero-bg"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="badge">Next-Gen Productivity</div>
-                <h1>Focus deeper. Plan better.<br>Achieve more.</h1>
-                <p>Welcome to PomoPlan — the ultimate pomo plan tool and pomodoro timer for deep work! Break free from endless lists. PomoPlan combines a <strong>Pomodoro Timer</strong> with <strong>Waterfall planning</strong>, the <strong>Eisenhower Matrix</strong>, and powerful <strong>Habit Tracking</strong>.</p>
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    Free on Google Play
+                </div>
+                <h1>Focus deeper.<br>Plan smarter.<br><span class="hero-accent">Achieve more.</span></h1>
+                <p class="hero-subtitle">PomoPlan combines a Pomodoro timer with Kanban, Waterfall planning, the Eisenhower Matrix, and powerful habit tracking — all in one beautiful app.</p>
                 <div class="cta-group">
                     <a href="https://play.google.com/store/apps/details?id=com.pomoplan.pomoplan" class="btn-primary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.32.18.69.19 1.03.04l12.09-6.95-2.83-2.83-10.29 9.74zm-1.17-20.6C1.66 3.56 1.5 4 1.5 4.5v15c0 .5.16.94.51 1.34l.07.07 8.4-8.4v-.2L2.08 3.09l-.07.07zm17.4 9.14l-2.44-1.4-3.18 3.18 3.19 3.19 2.44-1.41c.7-.4.7-1.56-.01-1.96v-.6zM4.21.2C3.87.05 3.5.06 3.18.24L13.48 10.5l-2.83 2.83L2.01.9l.07-.07A1.5 1.5 0 014.21.2z"/></svg>
                         Download on Google Play
                     </a>
+                    <a href="#features" class="btn-ghost">See Features ↓</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Task Views</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">86</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">To Download</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/hero-image.png" alt="PomoPlan Feature Graphic" class="hero-img">
+            <div class="hero-image-wrap">
+                <div class="hero-glow"></div>
+                <img src="assets/hero-image.png" alt="PomoPlan App Screenshot" class="hero-img">
             </div>
         </div>
     </header>
 
+    <!-- Feature Graphic Banner -->
+    <section class="graphic-banner">
+        <div class="container">
+            <img src="assets/feature-graphic.png" alt="PomoPlan — Focus. Plan. Build habits." class="feature-graphic">
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <div class="section-title">
-                <h2>Designed for Visual Thinkers</h2>
-                <p>Every tool you need to stay organized, bundled in one distraction-free app.</p>
+            <div class="section-header">
+                <div class="section-badge">Features</div>
+                <h2>Everything you need to stay in flow</h2>
+                <p>One distraction-free app. Multiple visual perspectives on your work.</p>
             </div>
             <div class="feature-grid">
-                
-                <!-- Feature 1 -->
+
                 <div class="feature-card">
-                    <div class="icon" style="background-color: #FFFFFF; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-                        <img src="assets/logo.svg" alt="Timer" style="width: auto; height: 72px; object-fit: contain;">
+                    <div class="feature-icon icon-red">
+                        <!-- Stopwatch / countdown timer -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feat-svg">
+                            <circle cx="12" cy="13" r="8"/>
+                            <path d="M12 9v4l2.5 2.5"/>
+                            <path d="M9.5 3h5"/>
+                            <path d="M15 3.5l1.5-1.5"/>
+                            <path d="M9 3.5L7.5 2"/>
+                        </svg>
                     </div>
                     <h3>Floating Pomodoro Timer</h3>
-                    <p>Keep your timer visible on top of any other app using Picture-in-Picture. Never lose track of your focus session while multitasking.</p>
+                    <p>Keep your timer visible on top of any app with Picture-in-Picture mode. Never lose track of your focus session while multitasking.</p>
+                    <span class="feature-tag">PiP Mode</span>
                 </div>
 
-                <!-- Feature 2 -->
                 <div class="feature-card">
-                    <div class="icon" style="background-color: #2196F3;">🌊</div>
-                    <h3>Waterfall Planning</h3>
-                    <p>Stop scrolling through endless lists. Visualize your projects as a cascading flow of tasks, making complex workflows easy to digest.</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <div class="icon" style="background-color: #FF9800; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 25px;">
-                        <div style="background-color: #FFF; border-radius: 4px; width: 100%; height: 100%;"></div>
-                        <div style="background-color: rgba(255,255,255,0.6); border-radius: 4px; width: 100%; height: 100%;"></div>
-                        <div style="background-color: rgba(255,255,255,0.6); border-radius: 4px; width: 100%; height: 100%;"></div>
-                        <div style="background-color: rgba(255,255,255,0.3); border-radius: 4px; width: 100%; height: 100%;"></div>
+                    <div class="feature-icon icon-blue">
+                        <!-- Waterfall / cascading stages -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="feat-svg">
+                            <rect x="2" y="3" width="7" height="4" rx="1.5"/>
+                            <rect x="2" y="10" width="5" height="3.5" rx="1.5" opacity=".5"/>
+                            <rect x="8.5" y="10" width="7" height="4" rx="1.5"/>
+                            <rect x="6" y="17" width="5" height="3.5" rx="1.5" opacity=".5"/>
+                            <rect x="15" y="17" width="7" height="4" rx="1.5"/>
+                            <path d="M9 5h3M15.5 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+                        </svg>
                     </div>
-                    <h3>Interactive Eisenhower Matrix</h3>
-                    <p>Drag and drop tasks into quadrants to instantly separate the urgent from the important. Make strategic decisions, not just busywork.</p>
+                    <h3>Waterfall Planning</h3>
+                    <p>Visualize projects as a cascading flow of dependent tasks. See blockers instantly and understand your critical path at a glance.</p>
+                    <span class="feature-tag">Premium</span>
                 </div>
 
-                <!-- Feature 4 -->
                 <div class="feature-card">
-                    <div class="icon" style="background-color: #4CAF50;">🌱</div>
-                    <h3>Comprehensive Habit Tracker</h3>
+                    <div class="feature-icon icon-orange">
+                        <!-- Eisenhower 2×2 matrix -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="feat-svg">
+                            <rect x="2" y="2" width="9" height="9" rx="2"/>
+                            <rect x="13" y="2" width="9" height="9" rx="2" opacity=".55"/>
+                            <rect x="2" y="13" width="9" height="9" rx="2" opacity=".55"/>
+                            <rect x="13" y="13" width="9" height="9" rx="2" opacity=".25"/>
+                        </svg>
+                    </div>
+                    <h3>Eisenhower Matrix</h3>
+                    <p>Drag and drop tasks into urgency/importance quadrants. Make strategic decisions, not just busywork.</p>
+                    <span class="feature-tag">Visual</span>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-green">
+                        <!-- Flame / streak -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="feat-svg">
+                            <path d="M12 2C9 7 7 9 7 13a5 5 0 0010 0c0-2.5-1-4.5-2-6-1 2-1.5 2.5-1.5 3.5a1.5 1.5 0 01-3 0C10.5 8 12 2 12 2z"/>
+                            <path d="M12 21a4 4 0 004-4c0-1.5-.7-2.8-1.5-3.8-.3 1-.8 1.8-1.5 2.3C12.3 16 11 15 11 13.5c-.7 1-1 2-1 3a2 2 0 002 2 2 2 0 002 2z" opacity=".4"/>
+                        </svg>
+                    </div>
+                    <h3>Habit Tracker</h3>
                     <p>Build long-term routines with streak statistics and visual progress reports. Master your daily discipline, step by step.</p>
+                    <span class="feature-tag">Streaks</span>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-purple">
+                        <!-- Kanban columns -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="feat-svg">
+                            <rect x="2" y="3" width="5.5" height="18" rx="2"/>
+                            <rect x="9.25" y="3" width="5.5" height="13" rx="2"/>
+                            <rect x="16.5" y="3" width="5.5" height="16" rx="2"/>
+                            <rect x="3.5" y="6.5" width="2.5" height="1.5" rx=".75" fill="white" opacity=".7"/>
+                            <rect x="10.75" y="6.5" width="2.5" height="1.5" rx=".75" fill="white" opacity=".7"/>
+                            <rect x="18" y="6.5" width="2.5" height="1.5" rx=".75" fill="white" opacity=".7"/>
+                        </svg>
+                    </div>
+                    <h3>Kanban Board</h3>
+                    <p>Switch seamlessly between List, Kanban, and Calendar views. Your tasks adapt to however you think best today.</p>
+                    <span class="feature-tag">3 Views</span>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-teal">
+                        <!-- Cloud sync -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="feat-svg">
+                            <path d="M18.5 9.5a6.5 6.5 0 00-12.9-1A4.5 4.5 0 005 17h13a4 4 0 00.5-7.5z" opacity=".9"/>
+                            <path d="M12 13v5M9.5 15.5L12 13l2.5 2.5" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud Backup</h3>
+                    <p>Never lose your data. Automatic Google Drive sync keeps your tasks, habits, and sessions safe across device changes.</p>
+                    <span class="feature-tag">Premium</span>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section id="comparison" class="comparison">
-        <div class="container">
-            <div class="comparison-content">
-                <h2>Why choose PomoPlan over traditional tools?</h2>
-                <p>Tools like Focus To-Do are great, but they restrict you to a vertical list. PomoPlan takes productivity to the next level by offering <strong>multiple visual perspectives</strong> on your work. Switch seamlessly between List, Kanban, and Waterfall views—your data is always exactly where you need it.</p>
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container why-container">
+            <div class="why-content">
+                <div class="section-badge light">Why PomoPlan?</div>
+                <h2>Beyond the basic to-do list</h2>
+                <p>Tools like Focus To-Do lock you into a vertical list. PomoPlan gives you <strong>multiple visual perspectives</strong> — so you can switch between List, Kanban, and Waterfall depending on how you want to work today.</p>
                 <ul class="check-list">
-                    <li>✔️ Clutter-free, minimalist UI (built with Flutter)</li>
-                    <li>✔️ Free Cloud Backup</li>
-                    <li>✔️ Priority tags & smart sorting</li>
-                    <li>✔️ Home screen widget</li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Minimalist UI</strong>
+                            <span>Built with Flutter for a native, fluid experience</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Free Cloud Backup</strong>
+                            <span>Google Drive sync included with Premium</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Priority Tags & Smart Sorting</strong>
+                            <span>NLP-powered quick task input</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Home Screen Widgets</strong>
+                            <span>Task list, calendar, and habit widgets for Android</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
+            <div class="why-visual">
+                <div class="why-card wc1">
+                    <div class="wc-icon">🍅</div>
+                    <div class="wc-text">
+                        <strong>Focus Session</strong>
+                        <span>25:00 remaining</span>
+                    </div>
+                    <div class="wc-badge running">Running</div>
+                </div>
+                <div class="why-card wc2">
+                    <div class="wc-icon">✅</div>
+                    <div class="wc-text">
+                        <strong>Daily Goal</strong>
+                        <span>3 of 4 pomodoros done</span>
+                    </div>
+                    <div class="wc-progress"><div class="wc-bar" style="width: 75%"></div></div>
+                </div>
+                <div class="why-card wc3">
+                    <div class="wc-icon">🔥</div>
+                    <div class="wc-text">
+                        <strong>Habit Streak</strong>
+                        <span>12 days in a row</span>
+                    </div>
+                    <div class="wc-badge streak">Streak!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-container">
+            <img src="assets/logo.svg" alt="PomoPlan" class="cta-logo">
+            <h2>Start your first focus session today</h2>
+            <p>Free to download. No account required to get started.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pomoplan.pomoplan" class="btn-primary btn-large" target="_blank">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.32.18.69.19 1.03.04l12.09-6.95-2.83-2.83-10.29 9.74zm-1.17-20.6C1.66 3.56 1.5 4 1.5 4.5v15c0 .5.16.94.51 1.34l.07.07 8.4-8.4v-.2L2.08 3.09l-.07.07zm17.4 9.14l-2.44-1.4-3.18 3.18 3.19 3.19 2.44-1.41c.7-.4.7-1.56-.01-1.96v-.6zM4.21.2C3.87.05 3.5.06 3.18.24L13.48 10.5l-2.83 2.83L2.01.9l.07-.07A1.5 1.5 0 014.21.2z"/></svg>
+                Download Free on Google Play
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Odak Studio. All rights reserved.</p>
-            <p class="footer-links">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="PomoPlan" class="footer-logo">
+                <span>PomoPlan</span>
+            </div>
+            <p class="footer-copy">&copy; 2026 Odak Studio. All rights reserved.</p>
+            <div class="footer-links">
                 <a href="https://bunyamintamar.github.io/pomoplan-privacy/" target="_blank">Privacy Policy</a>
-                <a href="mailto:info.pomoplan@gmail.com">Contact Us</a>
-            </p>
+                <a href="mailto:info.pomoplan@gmail.com">Contact</a>
+            </div>
         </div>
     </footer>
 
