@@ -101,6 +101,48 @@ p  { font-size: 1rem; color: var(--text-muted); line-height: 1.7; }
 }
 .btn-nav:hover { background: var(--primary-hover); }
 
+/* Alternative Store Badges (Uptodown, APKPure) */
+.alt-downloads {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+.alt-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 500;
+}
+.badge-store {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.badge-store:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(224, 82, 82, 0.6);
+    transform: translateY(-1px);
+    color: #fff;
+}
+.store-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00d26a;
+    display: inline-block;
+    box-shadow: 0 0 6px rgba(0, 210, 106, 0.6);
+}
+
 /* ===== Navbar ===== */
 .navbar {
     position: sticky;
